@@ -1,14 +1,14 @@
-package com.hanghae.coffeeshop.domain.coffee;
+package com.hanghae.coffeeshop.domain.menu;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 
 @Entity
 @Getter
-public class Coffee {
+public class Menu {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(nullable = false)
