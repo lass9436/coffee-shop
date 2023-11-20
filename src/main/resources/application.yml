@@ -11,3 +11,7 @@ spring:
       ddl-auto: create-drop
     show-sql: true
     generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+    defer-datasource-initialization: true
