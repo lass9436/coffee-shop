@@ -1,4 +1,4 @@
-package com.hanghae.coffeeshop.controller.menu;
+package com.hanghae.coffeeshop.controller.user;
 
 import com.hanghae.coffeeshop.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
