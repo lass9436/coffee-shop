@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/coffee")
+@RequestMapping("/api/menu")
 public class MenuController {
 
     private final MenuService menuService;
@@ -21,7 +21,5 @@ public class MenuController {
     }
 
     @PostMapping("/list")
-    public List<Menu> getCoffeeList() {
-        return menuService.getCoffeeList();
-    }
+    public List<Menu> getMenuList() { return menuService.getMenuList(); }
 }

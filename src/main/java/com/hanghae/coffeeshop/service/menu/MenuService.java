@@ -17,7 +17,7 @@ public class MenuService {
         this.menuRepository = menuRepository;
     }
 
-    public List<Menu> getCoffeeList() {
+    public List<Menu> getMenuList() {
         return menuRepository.findAll();
     }
 }
