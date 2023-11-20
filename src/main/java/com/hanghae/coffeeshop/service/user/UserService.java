@@ -27,7 +27,7 @@ public class UserService {
             user.setPoint(user.getPoint() + point);
             userRepository.save(user);
             PointTransaction pointTransaction = new PointTransaction();
-            pointTransaction.setUserSeq(user.getSeq);
+            pointTransaction.setUserSeq(user.getSeq());
             pointTransaction.setType(PointTransaction.TransactionType.INCOME);
             pointTransaction.setPoint(point);
             pointTransactionRepository.save(pointTransaction);
